@@ -18,13 +18,23 @@ html, body{
 }
 h1, h2, h3, h4, h5, h6, strong{
     color: var(--mainText);
-    font-family: 'Russo One', sans-serif;
+    font-family: 'Offside', cursive;
     font-weight: 500;
 }
 p, li, span, label, input, textarea{
     color: var(--secondaryText);
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Allan', cursive;
+    font-size: 20px;
 }
+h1:before, h4:before, h3:before, h5:before, li:before {
+    content: '< ';
+    color: var(--mainText);
+  }
+  
+h1:after, h4:after, h3:after, h5:after, li:after {
+    content: ' />';
+    color: var(--mainText);
+  }
 .s1{
     background-color: var(--mainColor);
     border-bottom: 1px solid var(--borderColor);
@@ -234,6 +244,11 @@ h6{font-size: 16px;}
     text-align: center;
 }
 #social_image{
+    border-radius: 1px solid var(--borderColor);
+    border: 1px solid var(--borderColor);
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
     width: 100%;
 }
 .post_wrapper{

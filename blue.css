@@ -9,3 +9,6 @@
 	--previewShadow:#111921;
 	--buttonColor:#17a2b8;
 }
+li, li:after, li:before{
+	color: var(--secondaryColor);
+}
